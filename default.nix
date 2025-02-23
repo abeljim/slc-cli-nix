@@ -1,11 +1,11 @@
 {pkgs ? import <nixpkgs> {}}:
 pkgs.stdenv.mkDerivation {
   pname = "slc-cli";
-  version = "5.10.0";
+  version = "5.10.2.0";
 
   src = pkgs.fetchurl {
-    url = "https://www.silabs.com/documents/login/software/slc_cli_linux.zip";
-    sha256 = "0zvn4f7942vdiz8j45jilacrs2c6km199h57gr174ci7d026jcd2";
+    url = "https://github.com/abeljim/slc-cli-nix/releases/download/v5.10.2.0/slc_cli_linux_5.10.2.0.zip";
+    sha256 = "12w0c5l0nkm90v3j0xir04wrm32yyf5j33b89n9z84qawqbbacdm";
   };
 
   buildInputs = [
